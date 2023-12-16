@@ -4,6 +4,7 @@
   "main": "index.js",
   "author": "Joshua Comeau",
   "scripts": {
+    "lint:styles": "stylelint 'src/**/*.css' 'src/**/*.scss'",
     "start": "live-server --port=9000 --host=localhost ."
   },
   "dependencies": {
@@ -11,5 +12,11 @@
   },
   "engines": {
     "npm": ">5"
+  },
+  "devDependencies": {
+    "prettier": "^3.1.1",
+    "stylelint": "^16.0.2",
+    "stylelint-config-standard": "^35.0.0",
+    "stylelint-prettier": "^5.0.0"
   }
 }
